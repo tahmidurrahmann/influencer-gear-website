@@ -59,6 +59,7 @@ button{
     align-items: center;
     gap: 133px;
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 .circle-container img{
     width: 100%;
@@ -67,7 +68,8 @@ button{
 .circle-container{
     background-image: url("../images/Circle\ design.svg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 95%;
+    background-position: center;
 }
 main{
     max-width: 1440px;
@@ -161,7 +163,7 @@ main{
 }
 footer{
     background: #0A0826;
-    height: 30vh;
+    height: 40vh;
     text-align: center;
 }
 .sixth-heading{
@@ -183,4 +185,50 @@ footer{
     font-weight: 700;
     margin-left: 1200px;
     margin-top: 50px;
+}
+@media screen and (max-width:576px) {
+    nav{
+        flex-direction: column;
+    }
+    nav a{
+        display: none;
+    }
+    .first-section, .fourth-section{
+        flex-direction: column-reverse;
+    }
+    .second-heading{
+        font-size: 1.75rem;
+        text-align: center;
+        padding: 10px;
+    }
+    .first-paragraph{
+        text-align: center;
+    }
+    button{
+        margin-left: 80px;
+    }
+    .second-section{
+        flex-wrap: wrap;
+        border: 0px;
+    }
+    .second-section img{
+        width: 80px;
+    }
+    .third-section{
+        grid-template-columns: 1fr;
+    }
+    .seventh-paragraph{
+        margin-left: 290px;
+        margin-top: 25px;
+    }
+    .single-container img{
+        width: 400px;
+    }
+    .fifth-heading{
+        text-align: center;
+    }
+    #bn{
+        margin: 0px;
+        padding: 10px 24px;
+    }
 }
